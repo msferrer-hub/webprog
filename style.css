@@ -1,0 +1,50 @@
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+}
+
+a:hover {
+  color: #007BFF;
+}
+
+#home {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+.left-column, .right-column {
+  flex: 1;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+}
+.container {
+  display: flex;
+  gap: 30px;
+  background-color: powderblue;
+}
+
+.leftcon {
+  width: 30%;
+}
+.rightcon {
+  width: 70%;
+}

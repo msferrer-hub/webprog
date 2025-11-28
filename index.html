@@ -3,10 +3,12 @@
 <head>
 <title>My Profile</title>
 <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
 <header class="navbar">
+   
     <h2>
         <a href="#home">Home</a> |
         <a href="#lab1">Lab 1</a> |
@@ -14,6 +16,7 @@
         <a href="#lab3">Lab 3</a> |
         <a href="#lab4">Lab 4</a>
     </h2>
+    <button id="themeBtn">Toggle Dark Mode</button>
 </header>
 <hr>
 
@@ -25,6 +28,7 @@
             <img src="ferr.jpg" alt="Profile Image" class="profile-img"><br><br>
             <h1>Juan Dela Cruz</h1>
             <span class="job-title">Future Web Developer</span>
+            <button id="editJobBtn">Edit Job Title</button>
         </div>
         <hr>
 
@@ -37,7 +41,7 @@
         <hr>
 
         <div class="skills-section">
-            <h3>Skills</h3>
+            <h3>Skills</h3> <button id="toggleSkillsBtn">Hide Skills</button>
             <dl>
                 <dt>Frontend</dt>
                 <dd>HTML5</dd>
@@ -82,6 +86,7 @@
                 <p>
                     <label for="message">Message:</label><br>
                     <textarea id="message" name="message" rows="4" required></textarea>
+                    <p>Characters left: <span id="counter">200</span></p>
                 </p>
                 <p>
                     <input type="submit" value="Send Message">
@@ -93,11 +98,12 @@
 <hr>
 
 <footer>
-    <p>&copy; **WebProg - Web Programming 2025**</p>
+    <p>&copy; **WebProg - Web Programming 2025**</p> <p id="dateDisplay"></p>
 </footer>
 
 </body>
 </html>
+
 
 
 

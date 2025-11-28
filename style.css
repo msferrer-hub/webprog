@@ -1,0 +1,158 @@
+/* GLOBAL STYLES */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light gray background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    
+    /* === FIX FOR FIXED HEADER: Push content down to avoid overlap === */
+    /* Assumes the header height is around 60px */
+    padding-top: 60px; 
+}
+
+h1, h2, h3 {
+    color: #2c3e50; /* Darker blue-gray for headings */
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 15px 0;
+}
+
+/* NAVIGATION STYLES - FIXED HEADER */
+.navbar {
+    background-color: #3498db; /* Blue background for navigation */
+    padding: 10px 20px;
+    text-align: center;
+    
+    /* === Floating/Fixed Header Properties === */
+    position: fixed; /* Fixes the header relative to the viewport */
+    top: 0;          /* Anchors it to the top */
+    width: 100%;     /* Ensures it spans the full width */
+    z-index: 10;     /* Ensures it is on top of other content */
+    /* ======================================= */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+
+.navbar a:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    border-radius: 4px;
+}
+
+
+/* MAIN LAYOUT: FLEXBOX FOR 2-COLUMN */
+#main-content {
+    display: flex; /* Activate Flexbox */
+    max-width: 1100px;
+    margin: 20px auto; /* Center the container and add space */
+    padding: 0 20px;
+}
+/*
+.column {
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+*/
+.left-column {
+    flex: 1; /* Takes 1 part of the space */
+    min-width: 280px;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+}
+
+.right-column {
+    flex: 2; /* Takes 2 parts of the space (making it wider) */
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+}
+
+/* PROFILE STYLES */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #3498db;
+}
+
+.profile-header {
+    text-align: center;
+}
+
+.job-title {
+    display: block;
+    font-size: 1.1em;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+/* SKILLS STYLES (DL, DT, DD) */
+.skills-section dt {
+    font-weight: bold;
+    color: #e74c3c; /* Red color for skill categories */
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.skills-section dd {
+    margin-left: 20px;
+    line-height: 1.5;
+}
+
+/* FORM STYLES */
+.message-form input[type="text"],
+.message-form input[type="email"],
+.message-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+.message-form input[type="submit"] {
+    background-color: #2ecc71; /* Green button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.message-form input[type="submit"]:hover {
+    background-color: #27ae60; /* Darker green on hover */
+}
+
+/* FOOTER STYLES */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}

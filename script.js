@@ -13,7 +13,7 @@ themeBtn.addEventListener("click", function () {
 });
 
 
-document.getElementById("themeBtn").textcontent="Light Mode";
+
 
 // =============== EDIT JOB TITLE ===============
 const editJobBtn = document.getElementById("editJobBtn");

@@ -1,5 +1,5 @@
 // =============== DARK MODE TOGGLE ===============
-const themeBtn = document.getElementById("themeBtn");
+/* const themeBtn = document.getElementById("themeBtn");
 
 themeBtn.addEventListener("click", function () {
     document.body.classList.toggle("dark-mode");
@@ -11,6 +11,25 @@ themeBtn.addEventListener("click", function () {
         themeBtn.textContent = "Dark Mode";
     }
 });
+*/
+function toggleTheme() {
+    const body = document.body;
+    const btn = document.getElementById("themeBtn");
+
+    // toggle dark mode
+    body.classList.toggle("dark-mode");
+
+    // update button label after click
+    if (body.classList.contains("dark-mode")) {
+        btn.textContent = "Light Mode";
+    } else {
+        btn.textContent = "Dark Mode";
+    }
+}
+
+
+
+
 
 // =============== EDIT JOB TITLE ===============
 const editJobBtn = document.getElementById("editJobBtn");

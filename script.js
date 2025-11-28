@@ -4,7 +4,9 @@ const themeBtn = document.getElementById("themeBtn");
 themeBtn.addEventListener("click", function () {
     document.body.classList.toggle("dark-mode");
 });
-
+document.getElementById("themeBtn").addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+});
 
 // =============== EDIT JOB TITLE ===============
 const editJobBtn = document.getElementById("editJobBtn");
